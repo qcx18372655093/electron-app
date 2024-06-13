@@ -1,0 +1,53 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "An Electron application with Vue",
+  "main": "./out/main/index.js",
+  "author": "example.com",
+  "homepage": "https://electron-vite.org",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@logicflow/core": "^1.2.26",
+    "@logicflow/extension": "^1.2.26",
+    "ant-design-vue": "^4.0.0-rc.6",
+    "echarts": "^5.5.0",
+    "electron-updater": "^6.1.7",
+    "lodash": "^4.17.21",
+    "lodash.clonedeep": "^4.5.0",
+    "pinia": "^2.1.7",
+    "vue-router": "^4.3.0",
+    "vue-schart": "^2.0.0",
+    "vue3-eventbus": "^2.0.0",
+    "vuedraggable": "^2.24.3"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.1",
+    "@rushstack/eslint-patch": "^1.6.1",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "less": "^4.2.0",
+    "prettier": "^3.2.4",
+    "sass": "^1.74.1",
+    "vite": "^5.0.12",
+    "vite-plugin-alias": "^0.1.1",
+    "vue": "^3.3.4"
+  }
+}

@@ -1,0 +1,24 @@
+.nav-bar-container{
+    position: relative;
+    box-sizing: border-box;
+    height: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,21,41,.08);
+}
+.is-collapse-nav {
+    position: relative;
+    box-sizing: border-box;
+    height: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    user-select: none;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,21,41,.08);
+}

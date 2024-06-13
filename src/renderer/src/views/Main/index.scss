@@ -1,0 +1,62 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .main-content {
+        position: relative;
+        min-height: 100%;
+        margin-left: 256px;
+        background: #f6f8f9;
+        transition: all .3s cubic-bezier(.645, .045, .355, 1), border 0s, background 0s, color 0s, font-size 0s;
+    }
+
+    .is-main {
+        margin-left:68px;
+    }
+
+    .content-box {
+        margin-top: 56px;
+        padding-top: 1px;
+        position: relative;
+        min-height: 100%;
+        background: #f6f8f9;
+        transition: all .3s cubic-bezier(.645, .045, .355, 1), border 0s, background 0s, color 0s, font-size 0s;
+    }
+
+    .content {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+        background: #fff;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+        min-height: calc(100vh - 95px);
+    }
+
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 997;
+        width: 100%;
+        overflow: hidden;
+        left: 256px;
+        width: calc(100% - 256px);
+        box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+        transition: all .3s cubic-bezier(.645, .045, .355, 1), border 0s, background 0s, color 0s, font-size 0s;
+    }
+
+    .is-collapse-header {
+        left: 65px;
+        width: calc(100% - 65px);
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 997;
+        box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+        transition: all .3s cubic-bezier(.645, .045, .355, 1), border 0s, background 0s, color 0s, font-size 0s;
+    }
+}
